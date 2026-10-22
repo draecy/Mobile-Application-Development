@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Taip sesuatu di sini.."
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/btnSave" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLoad"
+            android:text="Load"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/tvContents"
+        android:layout_marginTop="16dp"
+        android:text="Kandungan fail akan dipaparkan disini."
+        android:scrollbars="vertical" />
+
+</LinearLayout>
